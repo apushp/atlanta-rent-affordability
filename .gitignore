@@ -1,0 +1,8 @@
+.venv/
+__pycache__/
+.DS_Store
+.env
+# Raw downloads and the local database are rebuilt by the scripts
+data/raw/
+data/*.duckdb
+data/*.duckdb.wal
