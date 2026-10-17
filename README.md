@@ -8,6 +8,8 @@ rents rising faster than incomes, and where can someone on a typical entry-level
 
 **Tools:** Python (pandas, requests) · SQL (DuckDB) · Tableau Public
 
+**Dashboard:** [Tableau Public](https://public.tableau.com/app/profile/amal.pushp2875/viz/WhereCanYouAffordtoRentinAtlanta/AtlantaRentAffordability)
+
 ---
 
 ## Key findings
@@ -55,11 +57,12 @@ The bar for the typical ZIP ($1,863/month) is an income of about $74,500.
 
 ## Dashboard
 
-Tableau Public: *[link coming soon]*
+**[View the interactive dashboard on Tableau Public](https://public.tableau.com/app/profile/amal.pushp2875/viz/WhereCanYouAffordtoRentinAtlanta/AtlantaRentAffordability)**
 
 - Map of ZIP codes colored by rent as a share of renter income
-- Rent trend lines, 2015–2026, for any ZIP
-- "Where can I afford?" salary filter
+- "Where can I afford?" map driven by a salary slider ($30k–$150k)
+- Median asking rent, 2015–2026, for the five core counties
+- Rent growth vs renter income growth by ZIP, 2019–2022
 
 ## Data
 
@@ -110,3 +113,5 @@ python scripts/03_findings.py   # prints the findings
 ```
 
 The two CSVs in `data/processed/` are the inputs to the Tableau dashboard.
+`python scripts/04_tableau_workbook.py` builds the Tableau workbook and data extracts from them
+(written to `dashboard/`).
